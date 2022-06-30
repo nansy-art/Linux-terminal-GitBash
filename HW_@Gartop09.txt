@@ -1,0 +1,46 @@
+Home work #1 Анастасия @Gartop09
+
+1) Посмотреть где я - pwd
+2) Создать папку - mkdir gav
+3) Зайти в папку - cd gav
+4) Создать 3 папки - mkdir gas ass sas
+5) Зайти в любую папку - cd ass
+6) Создать 5 файлов (3 txt, 2 json) - touch ut.txt es.txt qa.txt pol.json kloy.json
+7) Создать 3 папки - mkdir nom tur opp
+8) Вывести список содержимого папки - ls -la
+9) + Открыть любой txt файл - cat qa.txt
+10) + написать туда что-нибудь, любой текст - cat >> qa.txt
+                                                  12345
+                                                  054765456
+                                                  150472022
+                                                  g56g6fh5
+                                                  656fh6g47jyhfj
+11) + сохранить и выйти. - после 656fh6g47jyhfj нажать Enter, и нажать Ctrl+C
+12) Выйти из папки на уровень выше - cd ../
+13) переместить любые 2 файла, которые вы создали, в любую другую папку - mv ut.txt es.txt nom
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку - cp kloy.json pol.json tur
+15) Найти файл по имени - find . -name "qa.txt"
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает - grep "47"
+17) вывести несколько первых строк из текстового файла - head -2 qa.txt
+18) вывести несколько последних строк из текстового файла - tail -2 qa.txt
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает - less qa.txt
+20) вывести дату и время - date
+
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request - curl http://162.55.220.72:5005/terminal-hw-request
+                                                                                  curl  "http://162.55.220.72:5005/get_method?name="nancy"&age="27""
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13 - touch script.txt
+cat >> script.txt
+#!/bin/bash
+cd gav
+mkdir gas ass sas
+cd ass
+touch ut.txt es.txt qa.txt pol.json kloy.json
+mkdir nom tur opp
+ls -la
+cd ../
+mv ass/ut.txt gas/ut.txt ; mv ass/es.txt sas/es.txt
+нажать Enter, и нажать Ctrl+C
+chmod +x ./script.txt
+./script.txt
